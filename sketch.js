@@ -22,7 +22,7 @@ function preload() {
     alert("Be patient as it will load almost 10 MB of files, or you may also download it");
     alert("Remove headphones or minimise it's volume");
     font = loadFont("fonts/ShriftSteamy.otf");
-    // firesound= loadSound("firesound.mp3");
+    firesound= loadSound("firesound.mp3");
     back = loadImage("background.png");
     playerimg = loadAnimation("player/snapshot1.png", "player/snapshot2.png", "player/snapshot3.png", "player/snapshot4.png", "player/snapshot5.png", "player/snapshot6.png", "player/snapshot7.png", "player/snapshot8.png", "player/snapshot9.png", "player/snapshot10.png", "player/snapshot11.png", "player/snapshot12.png", "player/snapshot13.png", "player/snapshot14.png", "player/snapshot15.png", "player/snapshot16.png", "player/snapshot17.png", "player/snapshot18.png");
     zombie1img = loadAnimation("zombie1/snapshot2.png", "zombie1/snapshot3.png", "zombie1/snapshot4.png", "zombie1/snapshot5.png", "zombie1/snapshot6.png", "zombie1/snapshot7.png", "zombie1/snapshot8.png", "zombie1/snapshot9.png", "zombie1/snapshot10.png", "zombie1/snapshot11.png", "zombie1/snapshot12.png", "zombie1/snapshot13.png", "zombie1/snapshot14.png", "zombie1/snapshot15.png", "zombie1/snapshot16.png", "zombie1/snapshot17.png", "zombie1/snapshot18.png", "zombie1/snapshot19.png");
@@ -231,7 +231,7 @@ function fire() {
         bullet.scale = 0.1;
         bulletreloadtime = 0;
         bullet.lifetime = 40;
-        // firesound.play();
+        firesound.play();
         bulletreload();
     }
 }
